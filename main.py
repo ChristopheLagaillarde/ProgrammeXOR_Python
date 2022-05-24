@@ -7,7 +7,7 @@
 from xor_of import xor_of
 
 
-def main():
+def main() -> None:
     print(xor_of(False, True))
 
 

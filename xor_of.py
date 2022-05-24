@@ -4,14 +4,17 @@
 # Author : Christophe Lagaillarde
 # Version :1.0
 
-def xor_of(bool_value1, bool_value2):
+def xor_of(bool_value1: bool, bool_value2: bool) -> bool:
+
     if not isinstance(bool_value1, bool) or not isinstance(bool_value2, bool):
         raise TypeError
+
     elif bool_value1 is True or bool_value2 is True:
         if bool_value1 == bool_value2:
             return False
         else:
             return True
+
     else:
         return False
 

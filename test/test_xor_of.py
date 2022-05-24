@@ -7,7 +7,7 @@
 from xor_of import xor_of
 
 
-def test_xor_of():
+def test_xor_of() -> None:
     assert(xor_of(True, True)), "it does not work"
 
 
