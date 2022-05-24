@@ -1,26 +1,15 @@
-import sys
-sys.tracebacklimit=0
-try:
-    a = input("Saisir vrai ou faux")
-    b = input("Saisir vrai ou faux")
-    if (a != "vrai" and a != "faux") or (b != "vrai" and b != "faux"):
-        a = 1
-        b = 2
-        raise Exception("Suivez les consigne !")
-except TypeError:
+# Program : main
+# Description : execute xor_of
+# Date : 24/05/22
+# Author : Christophe Lagaillarde
+# Version :1.0
 
-    print("Mauvaise saisie")
+from xor_of import xor_of
 
-if a == "vrai":
-    a = True
-if a == "faux":
-    a = False
-if b == "vrai":
-    b = True
-if b == "faux":
-    b = False
 
-if a == b:
-    print("Le XOR de a et b vaut faux")
-elif a != b:
-    print("Le XOR de a et b vaut vrai")
+def main():
+    print(xor_of(False, True))
+
+
+if __name__ == "__main__":
+    main()
